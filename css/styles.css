@@ -585,7 +585,7 @@ team-icons-list-item {
 }
 
 .picture-wrap:hover .overlay-text {
-  transform: translatey(0%);
+  /* transform: translatey(0%); */
 }
 
 .portfolio-image {
@@ -607,12 +607,13 @@ team-icons-list-item {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
+
 
 .portfolio-card {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  
 }
 
 .portfolio-subtitle {
@@ -801,8 +802,10 @@ team-icons-list-item {
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px; */
+  /* min-height: 584px; */
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   position: absolute;
   top: 50%;
@@ -811,7 +814,8 @@ team-icons-list-item {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
-  padding: 72px 24px 24px 24px;
+  /* padding: 72px 24px 24px 24px; */
+  padding: 72px 16px 16px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -853,7 +857,8 @@ team-icons-list-item {
   text-align: center;
   color: #2e2f42;
   text-align: center;
-  max-width: 360px;
+  /* max-width: 360px; */
+  max-width: 256px;
   margin-bottom: 16px;
 }
 
@@ -871,11 +876,10 @@ team-icons-list-item {
   width: 100%;
   height: 40px;
   padding-left: 38px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ /*  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   background-color: transparent;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
 .modal-input::placeholder {
   font-size: 12px;
@@ -895,16 +899,16 @@ team-icons-list-item {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-input:focus,
 modal-input:hover {
-  border-color: #4d5ae5;
+  /* border-color: #4d5ae5; */
 }
 
 .modal-input:focus + .modal-icon {
-  fill: #4d5ae5;
+  /* fill: #4d5ae5; */
 }
 
 .modal-label {
@@ -927,14 +931,14 @@ modal-input:hover {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   outline: transparent;
   resize: none;
 }
 
 .modal-text:hover,
 .modal-text:focus {
-  border-color: #4d5ae5;
+ /*  border-color: #4d5ae5; */
 }
 
 .modal-submit-btn {
@@ -953,12 +957,12 @@ modal-input:hover {
   height: 56px;
   border: none;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   /* box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-field {
-  margin-bottom: 24px;
+  margin-bottom: 24px;  
 }
 
 .modal-check:checked + .check-text span {
@@ -972,7 +976,7 @@ modal-input:hover {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: #8e8f99; 
 }
 
 .check-text span {
@@ -985,9 +989,9 @@ modal-input:hover {
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
   margin-right: 8px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), */
+    /* border 250ms cubic-bezier(0.4, 0, 0.2, 1), */
+    /* fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-check-icon {
@@ -998,29 +1002,31 @@ modal-input:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
-  margin-left: 5px;
+  /* margin-left: 5px; */
+  margin-left: 25px;
+
 }
 
 /*------------------------------TABLET VERSION-----------------*/
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
+.container {
+  width: 768px;
+}
 
 
 
   /*--------------------------Header-----------------------------*/
- .header {
+.header {
   padding: 0;
  }
  
 
-  .header-nav-logo {
+.header-nav-logo {
   margin-right: 120px;
   }
 
-  .header-nav-list {
-  display: flex;
+.header-nav-list {
+  display:flex;
   gap: 40px;
 }
 
@@ -1076,9 +1082,8 @@ modal-input:hover {
 
 
 .header-menu-btn {
-  display: none;
+ display: none;
 }
-
 
 
   /*----------------------------Hero-----------------------------*/
@@ -1148,6 +1153,22 @@ modal-input:hover {
   .portfolio-list-item {
     width: calc((100% - 24px) / 2);
   }
+
+/*--------------------------------Modal-menu-------------------*/
+.modal {
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
+}
+
+.modal-title {
+  max-width: 360px;
+}
+
+.check-link {
+  margin-left: 5px;
+}
+
 }
 
 /*-------------------------------DESKTOP VERSION---------------*/
@@ -1254,11 +1275,11 @@ modal-input:hover {
   }
   /*----------------------------Portfolio----------------------*/
   .portfolio {
-    padding: 120px 0;
+    padding: 120px 0
   }
 
   .portfolio-list {
-    gap: 48px 24px;
+        gap: 48px 24px;
   }
 
   .portfolio-list-item {
@@ -1288,4 +1309,47 @@ modal-input:hover {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
+
+
+  /*-------------------------Modal-menu------------------------*/
+  .modal-input {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+
+  .modal-input:focus,
+  .modal-input:hover {
+    border-color: #4d5ae5;
+  }
+
+  .modal-input:focus + .modal-icon {
+    fill: #4d5ae5;
+  }
+
+  .modal-text {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-text:hover,
+  .modal-text:focus {
+    border-color: #4d5ae5;
+   }
+
+  .modal-submit-btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  }
+
+  .check-text span {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+
+
+  }
